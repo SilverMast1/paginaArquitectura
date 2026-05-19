@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRAL INTERFACE: ARQUITECTURA DE CÓMPUTO</title>
+    <link rel="stylesheet" href="paginawe.css">
+    <style>
+        .nav-container { margin-top: 15px; text-align: center; }
+        .nav-link { color: #0ff; text-decoration: none; padding: 10px 20px; border: 1px solid #0ff; border-radius: 5px; margin: 0 10px; transition: all 0.3s; font-family: 'Courier New', Courier, monospace; }
+        .nav-link:hover { background: #0ff; color: #000; box-shadow: 0 0 15px #0ff; }
+        .sub-node p { color: #aaa; font-size: 0.9em; margin-top: 5px; margin-bottom: 10px; line-height: 1.4; }
+        .sub-node ul li { margin-bottom: 6px; }
+        .sub-node ul li strong { color: #0ff; }
+    </style>
+</head>
+<body>
+    <div class="background-grid"></div>
+
+    <header class="main-header">
+        <div class="glow-overlay"></div>
+        <h1 class="hero-title">CENTRAL INTERFACE: ARQUITECTURA DE CÓMPUTO</h1>
+        <div class="system-status">SYSTEM STATUS: OPTIMAL</div>
+        <div class="nav-container">
+            <a href="index.html" class="nav-link">INICIO</a>
+            <a href="reportes.html" class="nav-link">EVIDENCIAS</a>
+        </div>
+    </header>
+
+    <main class="dashboard-container">
+        <!-- UNIDAD 1 -->
+        <section class="unit-card" id="unidad-1">
+            <header class="card-header">
+                <span class="unit-code">CORE-01</span>
+                <h2>Unidad 1: Arquitecturas de Cómputo</h2>
+            </header>
+            <div class="card-content">
+                <article class="sub-node">
+                    <h3>1.1 Modelos de arquitecturas de cómputo</h3>
+                    <p>Los modelos de arquitectura definen la estructura y comportamiento fundamental de un sistema informático a nivel de hardware.</p>
+                    <ul>
+                        <li><strong>Clásicas (Von Neumann y Harvard):</strong> Arquitecturas base donde Von Neumann usa memoria unificada para datos e instrucciones, y Harvard usa memorias separadas para mayor velocidad.</li>
+                        <li><strong>Segmentadas (Pipelining):</strong> Ejecución de instrucciones dividida en etapas solapadas (buscar, decodificar, ejecutar) para aumentar el rendimiento continuo.</li>
+                        <li><strong>Multiprocesamiento:</strong> Uso de múltiples procesadores trabajando en conjunto y coordinados para ejecutar tareas de forma concurrente.</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>1.2 Análisis de componentes</h3>
+                    <p>Estudio detallado de los elementos principales que conforman la lógica y el cálculo de un equipo de cómputo.</p>
+                    <ul>
+                        <li><strong>1.2.1 Arquitecturas:</strong> Evaluación general del diseño del hardware, buses y su organización estructural.</li>
+                        <li><strong>1.2.2 Unidad de Control de Procesamiento (CPU):</strong> El cerebro principal del sistema, encargado de ejecutar los programas.
+                            <ul>
+                                <li><strong>Unidad Aritmética Lógica (ALU):</strong> Circuito que realiza todas las operaciones matemáticas y lógicas booleanas.</li>
+                                <li><strong>Unidad de Control (UC):</strong> Dirige el flujo de datos y coordina secuencialmente las operaciones del procesador.</li>
+                                <li><strong>Registros:</strong> Pequeñas memorias ultra-rápidas internas a la CPU para guardar datos inmediatos en uso.</li>
+                                <li><strong>Bases (Buses):</strong> Canales de comunicación físicos (datos, direcciones, control) que conectan y transportan información entre componentes.</li>
+                                <li><strong>Memoria:</strong> Componente donde residen las instrucciones y los datos necesarios para ser procesados.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>1.3 Memoria</h3>
+                    <p>Clasificación y funcionamiento de la jerarquía de almacenamiento temporal en un sistema computacional.</p>
+                    <ul>
+                        <li><strong>Memoria Principal (RAM):</strong> Almacenamiento volátil de acceso rápido donde residen los programas en ejecución y del sistema operativo.</li>
+                        <li><strong>Memoria Caché:</strong> Memoria intermedia, más rápida pero más pequeña que la RAM, alojada dentro o cerca de la CPU para pre-cargar datos frecuentes.</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>1.4 Modelos Entrada-Salida</h3>
+                    <p>Técnicas que emplea el sistema para gestionar la comunicación entre el procesador principal y los periféricos externos.</p>
+                    <ul>
+                        <li><strong>E/S Programada:</strong> El procesador verifica continuamente el estado del periférico hasta que esté listo (método conocido como polling).</li>
+                        <li><strong>E/S mediante Interrupciones:</strong> El periférico envía una señal de hardware al procesador solo cuando necesita atención, liberando carga de trabajo.</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>1.5 Acceso Directo a Memoria (DMA)</h3>
+                    <p>Mecanismo avanzado que permite a los periféricos (tarjetas de red, discos) transferir grandes bloques de datos directamente hacia o desde la memoria del sistema sin que el procesador tenga que intervenir byte por byte.</p>
+                </article>
+                <article class="sub-node">
+                    <h3>1.6 Bases de Datos y Hardware</h3>
+                    <p>Conceptos sobre cómo la arquitectura física soporta sistemas de gestión y almacenamiento de información pesada.</p>
+                    <ul>
+                        <li><strong>Tipos de bases:</strong> Diferencias arquitectónicas entre bases de datos Relacionales (SQL), distribuidas y en memoria.</li>
+                        <li><strong>Estructura:</strong> Formas en las que se organizan físicamente las tablas, campos y registros en las unidades de disco.</li>
+                        <li><strong>Jerarquía:</strong> Niveles de almacenamiento utilizados, balanceando velocidad (caché) contra capacidad (almacenamiento secundario).</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>1.7 Interrupciones</h3>
+                    <p>Señales asíncronas de hardware o de software enviadas a la CPU para alertar de un evento de alta prioridad, pausando momentáneamente la ejecución del programa actual para ejecutar una rutina de servicio.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- UNIDAD 2 -->
+        <section class="unit-card" id="unidad-2">
+            <header class="card-header">
+                <span class="unit-code">CORE-02</span>
+                <h2>Unidad 2: Estructura y Funcionamiento del Procesador</h2>
+            </header>
+            <div class="card-content">
+                <article class="sub-node">
+                    <h3>2.1 Organización del procesador</h3>
+                    <p>Distribución interna de los submódulos de la CPU (ALU, UC, registros, caché L1/L2) y cómo el diseño de sus buses internos acelera la velocidad general del cálculo computacional.</p>
+                </article>
+                <article class="sub-node">
+                    <h3>2.2 Estructura de registros</h3>
+                    <p>Jerarquía de espacios de almacenamiento temporal en la cima de la pirámide de memoria que alimentan directamente la ALU.</p>
+                    <ul>
+                        <li><strong>Registros visibles a usuario:</strong> Aquellos que pueden ser leídos o alterados a través del lenguaje ensamblador por el programador (registros de propósito general).</li>
+                        <li><strong>Registros de control:</strong> Utilizados en exclusiva por la Unidad de Control para gobernar el procesador (ej. el Contador de Programa o PC).</li>
+                        <li><strong>Registros de estado:</strong> Banderas (flags) que guardan las condiciones del resultado de la última operación (positivo, negativo, cero, acarreo).</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>2.3 Ciclo de instrucciones</h3>
+                    <p>Es la serie de operaciones mecánicas automatizadas que repite la CPU continuamente para procesar cualquier programa.</p>
+                    <ul>
+                        <li><strong>2.3.1 Búsqueda y Decodificación (Fetch/Decode):</strong> La UC lee la instrucción de la memoria y traduce su código de operación.</li>
+                        <li><strong>2.3.2 Ejecución y Almacenamiento (Execute/Store):</strong> La ALU realiza el trabajo matemático/lógico y el resultado se guarda en memoria o registro.</li>
+                        <li><strong>2.3.3 Conjunto de instrucciones (ISA):</strong> El diccionario completo de instrucciones que comprende el procesador, ya sea de tipo CISC (complejas) o RISC (reducidas).</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>2.4 Modos de direccionamiento</h3>
+                    <p>Las diferentes reglas matemáticas y lógicas (inmediato, directo, indirecto, indexado) en las que el procesador puede especificar dónde encontrar los operandos que necesita una instrucción para ejecutarse.</p>
+                </article>
+                <article class="sub-node">
+                    <h3>2.5 Casos de estudio</h3>
+                    <p>Análisis en profundidad de procesadores reales del mercado (familia x86 de Intel/AMD vs la familia ARM utilizada en móviles) para entender cómo aplican la teoría de la arquitectura en el mundo real.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- UNIDAD 3 -->
+        <section class="unit-card" id="unidad-3">
+            <header class="card-header">
+                <span class="unit-code">CORE-03</span>
+                <h2>Unidad 3: Selección de Componentes</h2>
+            </header>
+            <div class="card-content">
+                <article class="sub-node">
+                    <h3>3.1 Chipset</h3>
+                    <p>Conjunto de chips integrados en la tarjeta madre que sirven como centro de enrutamiento y comunicaciones de todo el sistema.</p>
+                    <ul>
+                        <li><strong>3.1.1 Integración CPU:</strong> Cómo el procesador se enlaza mediante canales de muy alta velocidad al resto de componentes.</li>
+                        <li><strong>3.1.2 Controlador de Bus:</strong> Regula las autopistas de datos principales (como PCIe) asegurando que no haya colisiones de información.</li>
+                        <li><strong>3.1.3 Puertas E/S (Interfaces):</strong> Conexiones físicas y lógicas externas (USB, SATA, HDMI) para conectar todo tipo de accesorios.</li>
+                        <li><strong>3.1.4 Controlador de Interrupciones:</strong> Chip especializado (como el APIC) que recopila señales de los dispositivos y las pasa a la CPU en orden de prioridad.</li>
+                        <li><strong>3.1.5 Controlador DMA:</strong> Administrador delegado que maneja el tráfico de datos pesado hacia la memoria.</li>
+                        <li><strong>3.1.6 Circuitos de temporización:</strong> El generador de reloj (cristal de cuarzo) que marca el pulso y sincroniza absolutamente todo.</li>
+                        <li><strong>3.1.7 Circuitos de control:</strong> Responsables del encendido seguro (POST), apagado térmico y gestión de energía (ACPI).</li>
+                        <li><strong>3.1.8 Controladores de video:</strong> La interfaz gráfica integrada (IGP) encargada de procesar la salida visual básica al monitor.</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>3.2 Aplicaciones (Armado y Ensamblaje)</h3>
+                    <p>Criterios técnicos para elegir hardware específico según las exigencias del software y los usuarios.</p>
+                    <ul>
+                        <li><strong>3.2.1 Entrada/Salida:</strong> Selección basada en latencia, ergonomía o robustez (ej. teclados mecánicos, escáneres especializados).</li>
+                        <li><strong>3.2.2 Almacenamiento:</strong> Decidir entre unidades SSD NVMe para máxima velocidad de lectura/escritura, o HDD mecánicos para almacenamiento económico masivo.</li>
+                        <li><strong>3.2.3 Fuentes de alimentación:</strong> Determinar el Wattaje necesario sumando el consumo pico de componentes y eligiendo certificaciones de eficiencia correctas.</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>3.3 Ambientes de servicio</h3>
+                    <p>Adecuación del hardware a las variables del entorno donde la computadora va a operar de manera continua.</p>
+                    <ul>
+                        <li><strong>Negocios (Oficinas):</strong> Equipos enfocados en bajo consumo eléctrico, perfiles silenciosos (SFF) y capacidades de red para ofimática.</li>
+                        <li><strong>Industria:</strong> Computadoras selladas (fanless), protegidas contra polvo, humedad y altas temperaturas, montadas en racks de uso rudo.</li>
+                        <li><strong>Comercio electrónico (Servidores):</strong> Máquinas diseñadas para alta disponibilidad, con redundancia de hardware (fuentes dobles, discos RAID) para evitar caídas de la tienda.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- UNIDAD 4 -->
+        <section class="unit-card" id="unidad-4">
+            <header class="card-header">
+                <span class="unit-code">CORE-04</span>
+                <h2>Unidad 4: Procesamiento Paralelo</h2>
+            </header>
+            <div class="card-content">
+                <article class="sub-node">
+                    <h3>4.1 Aspectos básicos</h3>
+                    <p>Fundamentos teóricos sobre dividir un problema computacional complejo en partes más pequeñas para que múltiples procesadores las resuelvan al mismo tiempo, reduciendo drásticamente el tiempo de ejecución.</p>
+                </article>
+                <article class="sub-node">
+                    <h3>4.2 Tipos de computación paralela</h3>
+                    <p>Maneras en que las arquitecturas organizan el nivel de concurrencia, desde operaciones microscópicas hasta sistemas masivos.</p>
+                    <ul>
+                        <li><strong>4.2.1 Clasificación:</strong> Taxonomía de Flynn que cataloga sistemas en flujos de datos e instrucciones (SISD, SIMD, MISD, MIMD).</li>
+                        <li><strong>4.2.2 Arquitectura secuencial:</strong> El modelo base no paralelo, usado como referencia métrica para medir cuánto se acelera un código al paralelizarse (Ley de Amdahl).</li>
+                        <li><strong>4.2.3 Organización de memoria:</strong> Estrategias sobre cómo asignar físicamente direcciones de RAM para evitar que los núcleos interfieran entre sí.</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>4.3 Sistemas de memoria compartida</h3>
+                    <p>Sistemas multicores donde todos los procesadores "ven" y acceden al mismo gran bloque de memoria RAM (SMP).</p>
+                    <ul>
+                        <li><strong>4.3.1 Redes de interconexión dinámica:</strong>
+                            <ul>
+                                <li><strong>Medio compartido:</strong> Uso de un bus único o compartido, muy económico pero con cuello de botella al escalar núcleos.</li>
+                                <li><strong>Conmutadas (Crossbar Switches):</strong> Mallas internas complejas donde múltiples CPU pueden leer diferentes zonas de memoria en paralelo y sin colisiones.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>4.4 Sistemas de memoria distribuida</h3>
+                    <p>Arquitecturas de clúster donde cada nodo (computadora independiente) posee su propia memoria privada, y cooperan mandándose mensajes por red.</p>
+                    <ul>
+                        <li><strong>4.4.1 Redes de interconexión estáticas:</strong> Topologías físicas fijas de red que ligan los nodos, como árboles de alto rendimiento, anillos, hipercubos y mallas (ej. para granjas de renderizado).</li>
+                    </ul>
+                </article>
+                <article class="sub-node">
+                    <h3>4.5 Casos para estudio</h3>
+                    <p>Análisis de plataformas avanzadas modernas: programación en tarjetas de video (GPUs) mediante CUDA/OpenCL, supercomputadoras Top500 y paralelismo en la inteligencia artificial.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="system-footer">
+        <p>&copy; 2026 ARCHITECTURE CONTROL HUB | ACCESS AUTHORIZED</p>
+    </footer>
+
+    <script src="pagina.js"></script>
+</body>
+</html>
